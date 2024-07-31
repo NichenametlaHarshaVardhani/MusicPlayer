@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="preloader.css"> -->
+    <title>Sangeeth</title>
+    <script>
+      document.onreadystatechange = function () {
+        var state = document.readyState;
+        if (state == "interactive") {
+          // Set the loading page visible when the page starts loading
+          document.getElementById("content").style.visibility = "hidden";
+        } else if (state == "complete") {
+          // Hide the loading page once the page is fully loaded
+          document.getElementById("load").style.display = "none";
+          document.getElementById("content").style.visibility = "visible";
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div id="load">
+      <div class="container">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <span class="loading">loading...</span>
+      </div>
+    </div>
+    <div id="content">
+      <div class="one">
+        <nav class="navbar">
+          <div class="left">
+            <img src="finallogo-removebg-preview (1).png" />
+            <h1>SANGEETH</h1>
+          </div>
+          <div class="center">
+            <a href="telugu.html">TELUGU</a>
+            <a href="hindi.html">HINDI</a>
+            <a href="index.html">ENGLISH</a>
+          </div>
+          <div class="right">
+            <a href="login1.html" class="link"><span>login</span></a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- <div class="popup">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2>Log in</h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" name="" id="password"placeholder="Enter password"/>
+        </div>
+
+        <div class="form-elemnt">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember-me</label>
+        </div>
+        <div class="form-element">
+            <button>Login</button>
+        </div>
+        <div class="form-element">
+          <a href="#">Forgot password</a>  
+        </div>
+      </div>
+    </div> -->
+    <script src="home.js"></script>
+  </body>
+</html>
